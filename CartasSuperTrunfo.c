@@ -5,6 +5,13 @@
 // Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
 // Siga os comentários para implementar cada parte do desafio.
 // 17/01/2025 - Fabiano Veiga - Desafio Novato
+float calcularDensidadePopulacional(){
+
+}
+
+float calcularPibPerCapita(){
+
+}
 
 int main() {
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
@@ -14,7 +21,9 @@ int main() {
     char nome[50];
     int populacao;
     float area;
+    float densidade;
     float pib;
+    float pibPerCapita;
     int pontosTuristicos;
 
     // Cadastro das Cartas:
