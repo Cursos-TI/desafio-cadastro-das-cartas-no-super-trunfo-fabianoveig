@@ -3,6 +3,27 @@
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das Cartas
 // 18/02/2025 - Fabiano Veiga - Desafio Novato
+// 21/02/2025 - Fabiano Veiga - Desafio Aventureiro
+
+float calcularDensidadePopulacional(int _populacao , int _area ) {
+    // Densidade populacional : Calculada como população dividida pela área da cidade. 
+    // Isso dá uma medida de quantas pessoas vivem por quilômetro quadrado. 
+
+    float _densidadePopulacional;
+    _densidadePopulacional = (float) (_populacao / _area);
+
+    return _densidadePopulacional;
+}
+
+float calcularPibPerCapita(float _pibTotal , int _populacao) {
+    // PIB per capita : Calculado como PIB total da cidade dividido pela população. 
+    // Isso dá uma medida da média de produção econômica por pessoa.
+ 
+    float _pibPerCapita;
+    _pibPerCapita = _pibTotal / (float) _populacao;
+
+    return _pibPerCapita;
+}
 
 int main() {
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
@@ -14,6 +35,8 @@ int main() {
     float area;
     float pib;
     int pontosTuristicos;
+    float densidadePopulacional;
+    float pibPerCapita;
 
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
@@ -38,7 +61,7 @@ int main() {
 
     printf("Digite a quantidade de pontos turisticos da primeira carta : \n");
     scanf("%d", &pontosTuristicos);
-    
+
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
@@ -48,7 +71,13 @@ int main() {
     printf("Nome da Cidade: %s \n",nome);
     printf("População: %d \n",populacao);
     printf("Área: %f km² \n",area);
+    // Densidade populacional : Calculada como população dividida pela área da cidade.
+    densidadePopulacional = (float) calcularDensidadePopulacional(populacao , area);
+    printf("Densidade Populacional: %.2f \n", densidadePopulacional);
     printf("PIB: R$ %f \n", pib);
+    // PIB per capita : Calculado como PIB total da cidade dividido pela população.
+    pibPerCapita = pib / (float) populacao;
+    printf("PIB per Capita: %.2f \n", pibPerCapita);
     printf("Quantidade de Pontos Turisticos: %d \n", pontosTuristicos);
 	
 	printf("Digite o Estado da segunda carta (letras de A a H): \n");
@@ -79,7 +108,13 @@ int main() {
     printf("Nome da Cidade: %s \n",nome);
     printf("População: %d \n",populacao);
     printf("Área: %f km² \n",area);
+    // Densidade populacional : Calculada como população dividida pela área da cidade.
+    densidadePopulacional = (float) calcularDensidadePopulacional(populacao , area);
+    printf("Densidade Populacional: %.2f \n", densidadePopulacional);
     printf("PIB: R$ %f \n", pib);
+    // PIB per capita : Calculado como PIB total da cidade dividido pela população.
+    pibPerCapita = pib / (float) populacao;
+    printf("PIB per Capita: %.2f \n", pibPerCapita);
     printf("Quantidade de Pontos Turisticos: %d \n", pontosTuristicos);
 
     return 0;
