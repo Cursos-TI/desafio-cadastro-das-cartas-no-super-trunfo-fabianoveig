@@ -5,6 +5,7 @@
 // 18/02/2025 - Fabiano Veiga - Desafio Novato
 // 21/02/2025 - Fabiano Veiga - Desafio Aventureiro
 // 06/03/2025 - Fabiano Veiga - Desafio Mestre
+// 08/03/2025 - Fabiano Veiga - Desafio Novato (Módulo 2)
 
 float calcularDensidadePopulacional(int _populacao , int _area ) {
     // Densidade populacional : Calculada como população dividida pela área da cidade. 
@@ -140,28 +141,40 @@ int main() {
     printf("Super Poder: %.2f \n", superPoder2);
 
     //Comparação de Cartas:
-    printf("Comparação de Cartas: \n");
+    printf("Comparação de cartas (Atributo: População): \n");
+    printf("Carta 1 - %s : %u \n", nome1, populacao1);
+    printf("Carta 2 - %s : %u \n", nome2, populacao2);
+
+    if(populacao1 > populacao2){
+        printf("Resultado: Carta 1 (%s) venceu! \n", nome1);
+    } else {
+        if (populacao1 < populacao2) {
+            printf("Resultado: Carta 2 (%s) venceu! \n", nome2);
+        } else {
+            printf("Resultado: Carta 1 (%s) e Carta 2 (%s) possuem o mesmo valor para o atributo! \n", nome1 , nome2);
+        }
+    }
+    
     //População
-    populacaoMaior = populacao1 > populacao2;
-    printf("População: Carta 1 venceu (%d) \n", populacaoMaior);
+    //populacaoMaior = populacao1 > populacao2;
     //Área
-    areaMaior = area1 > area2;
-    printf("Área: Carta 1 venceu (%d) \n", areaMaior);
+    //areaMaior = area1 > area2;
+    //printf("Área: Carta 1 venceu (%d) \n", areaMaior);
     //PIB
-    pibMaior = pib1 > pib2;
-    printf("PIB: Carta 1 venceu (%d) \n", pibMaior);
+    //pibMaior = pib1 > pib2;
+    //printf("PIB: Carta 1 venceu (%d) \n", pibMaior);
     //Pontos Turísticos
-    pontosTuristicosMaior = pontosTuristicos1 > pontosTuristicos2;
-    printf("Pontos Turísticos: Carta 1 venceu (%d) \n", pontosTuristicosMaior);
+    //pontosTuristicosMaior = pontosTuristicos1 > pontosTuristicos2;
+    //printf("Pontos Turísticos: Carta 1 venceu (%d) \n", pontosTuristicosMaior);
     //Densidade Populacional
-    densidadePopulacionalMaior = densidadePopulacional1 > densidadePopulacional2;
-    printf("Densidade Populacional: Carta 1 venceu (%d) \n", densidadePopulacionalMaior);
+    //densidadePopulacionalMaior = densidadePopulacional1 > densidadePopulacional2;
+    //printf("Densidade Populacional: Carta 1 venceu (%d) \n", densidadePopulacionalMaior);
     //PIB per Capita
-    pibPerCapitaMaior = pibPerCapita1 > pibPerCapita2;
-    printf("PIB per Capita: Carta 1 venceu (%d) \n", pibPerCapitaMaior);
+    //pibPerCapitaMaior = pibPerCapita1 > pibPerCapita2;
+    //printf("PIB per Capita: Carta 1 venceu (%d) \n", pibPerCapitaMaior);
     //Super Poder
-    superPoderMaior = superPoder1 > superPoder2;
-    printf("Super Poder: Carta 1 venceu (%d) \n", superPoderMaior);
+    //superPoderMaior = superPoder1 > superPoder2;
+    //printf("Super Poder: Carta 1 venceu (%d) \n", superPoderMaior);
     
     return 0;
 }
